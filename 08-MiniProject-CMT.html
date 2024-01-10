@@ -81,7 +81,7 @@
         function handleDelete(event,index){
             event.preventDefault()
             // console.log((customers[index].checkout).length);
-            if ((customers[index].checkout).length==1) {
+            if ((customers[index].checkout).length==1) { //Checking if checkout time is there or not
                 seatsLeft = Number(seatsLeft)+Number((customers[index].count));
             }
             customers.splice(index,1);
